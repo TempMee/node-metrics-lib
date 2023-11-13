@@ -18,6 +18,10 @@ class SemanticReleaseError extends Error {
 module.exports = {
   branches: [{ name: 'main' }],
   verifyConditions: ['@semantic-release/github'],
-  prepare: [],
+  prepare: [
+    '@semantic-release/changelog',
+    '@semantic-release/npm',
+    '@semantic-release/git',
+  ],
   publish: ['@semantic-release/github'],
 }
