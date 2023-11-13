@@ -20,7 +20,12 @@ module.exports = {
   verifyConditions: ['@semantic-release/github'],
   prepare: [
     '@semantic-release/changelog',
-    '@semantic-release/npm',
+    [
+      '@semantic-release/npm',
+      {
+        npmPublish: false,
+      },
+    ],
     '@semantic-release/git',
   ],
   publish: ['@semantic-release/github'],
