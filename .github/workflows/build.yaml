@@ -1,4 +1,4 @@
-name: go-tests
+name: node-tests
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: go-tests
+    name: node-tests
     runs-on: ubuntu-latest
     strategy:
       matrix:
