@@ -56,7 +56,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
+      - name: install husky
+        run: yarn add -D husky
+      - name: create .npmrc file
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo -e "@tempmee:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > .npmrc
+      - name: cat .npmrc
+        run: cat .npmrc
       - name: release
         uses: cycjimmy/semantic-release-action@v4
         env:

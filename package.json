@@ -2,7 +2,10 @@
   "name": "node-metrics-lib",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:TempMee/node-metrics-lib.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TempMee/node-metrics-lib.git"
+  },
   "author": "James Trotter <james.trotter@tempmee.com>",
   "license": "MIT",
   "scripts": {
@@ -53,4 +56,5 @@
     "*.[j|t]s": "eslint --cache --fix"
   },
   "packageManager": "yarn@4.0.1"
+
 }
