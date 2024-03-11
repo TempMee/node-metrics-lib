@@ -55,6 +55,8 @@
   "lint-staged": {
     "*.[j|t]s": "eslint --cache --fix"
   },
-  "packageManager": "yarn@4.0.1"
-
+  "packageManager": "yarn@4.0.1",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/tempmee"
+  }
 }
