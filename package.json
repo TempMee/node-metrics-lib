@@ -57,6 +57,6 @@
   },
   "packageManager": "yarn@4.0.1",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/tempmee"
+    "registry": "https://npm.pkg.github.com/@tempmee"
   }
 }
