@@ -15,7 +15,7 @@ class SemanticReleaseError extends Error {
   }
 }
 
-export default {
+module.exports = {
   branches: [{ name: 'main' }],
   plugins: [
     '@semantic-release/commit-analyzer',
