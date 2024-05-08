@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: 'tsconfig.json',
@@ -32,7 +32,7 @@ module.exports = {
     'import/order': [
       'error',
       {
-        groups: ["builtin", "external", "parent", "sibling", "index"],
+        groups: ['builtin', 'external', 'parent', 'sibling', 'index'],
       },
     ],
     'ordered-imports': [
