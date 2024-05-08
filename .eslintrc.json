@@ -28,7 +28,8 @@
     "es6": true
   },
   "ignorePatterns": [
-    ".eslintrc.json"
+    ".eslintrc.json",
+    "*.test.ts"
   ],
   "rules": {
     "import/order": [
