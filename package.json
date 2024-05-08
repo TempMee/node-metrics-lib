@@ -2,6 +2,7 @@
   "name": "@tempmee/node-metrics-lib",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/TempMee/node-metrics-lib.git"
