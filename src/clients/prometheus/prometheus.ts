@@ -1,4 +1,4 @@
-import Prometheus from 'prom-client'
+import * as Prometheus from 'prom-client'
 
 interface MetricWithLabelNames<T> {
   Labels: string[]

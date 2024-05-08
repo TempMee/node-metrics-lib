@@ -1,4 +1,4 @@
-import tracer from 'dd-trace'
+const tracer = require('dd-trace')
 
 export class DataDogClient {
   constructor() {
