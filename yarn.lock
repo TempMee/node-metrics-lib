@@ -1343,7 +1343,7 @@ __metadata:
     "@types/supertest": "npm:^2.0.16"
     "@typescript-eslint/eslint-plugin": "npm:^6.11.0"
     "@typescript-eslint/parser": "npm:^6.11.0"
-    dd-trace: "npm:^5.12.0"
+    dd-trace: "npm:^3.13.2"
     eslint: "npm:^8.53.0"
     eslint-config-airbnb: "npm:^19.0.4"
     eslint-config-airbnb-typescript: "npm:^17.1.0"
@@ -1373,7 +1373,7 @@ __metadata:
     ts-node: "npm:^10.9.1"
     typescript: "npm:^5.2.2"
   peerDependencies:
-    dd-trace: ^4.18.0
+    dd-trace: ^3.13.2
     express: ^4.17.1
     prom-client: ^15.0.0
   languageName: unknown
@@ -2860,9 +2860,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dd-trace@npm:^5.12.0":
-  version: 5.12.0
-  resolution: "dd-trace@npm:5.12.0"
+"dd-trace@npm:^3.13.2":
+  version: 3.57.0
+  resolution: "dd-trace@npm:3.57.0"
   dependencies:
     "@datadog/native-appsec": "npm:7.1.1"
     "@datadog/native-iast-rewriter": "npm:2.3.0"
@@ -2896,7 +2896,7 @@ __metadata:
     semver: "npm:^7.5.4"
     shell-quote: "npm:^1.8.1"
     tlhunter-sorted-set: "npm:^0.1.0"
-  checksum: dc8be2b43eb8118726eef69c9c38ce9a0a3d7573724aa6c60602cf74f8083f7f9380ad0e9ea495e9266ac3f11158b13fb9039029bd635dc7cbe8d36bb408be3f
+  checksum: 0c5957c5ca455a1fe09a90824185e837e1df99081b0383414f60b57066a5d5fa7747c8e3140eb57ed1947ed60a0781b5e89958f887bcc315fb3c415e68a6d443
   languageName: node
   linkType: hard
 
