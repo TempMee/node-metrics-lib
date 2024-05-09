@@ -1,6 +1,8 @@
 {
   "extends": "./tsconfig.json",
     "compilerOptions": {
-      "resolveJsonModule": false
+      "resolveJsonModule": false,
+      "declaration": true,
+      "declarationDir": "./dist-esm",
     }
 }
