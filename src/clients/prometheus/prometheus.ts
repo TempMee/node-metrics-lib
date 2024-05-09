@@ -1,4 +1,4 @@
-import * as Prometheus from 'prom-client'
+import { Gauge, Histogram, Summary, Counter } from 'prom-client'
 
 interface MetricWithLabelNames<T> {
   Labels: string[]
@@ -7,19 +7,19 @@ interface MetricWithLabelNames<T> {
 export class PrometheusClient {
   private readonly HistogramVecs: Record<
     string,
-    MetricWithLabelNames<Prometheus.Histogram<string>>
+    MetricWithLabelNames<Histogram<string>>
   >
   private readonly CounterVecs: Record<
     string,
-    MetricWithLabelNames<Prometheus.Counter<string>>
+    MetricWithLabelNames<Counter<string>>
   >
   private readonly GaugeVecs: Record<
     string,
-    MetricWithLabelNames<Prometheus.Gauge<string>>
+    MetricWithLabelNames<Gauge<string>>
   >
   private readonly SummaryVecs: Record<
     string,
-    MetricWithLabelNames<Prometheus.Summary<string>>
+    MetricWithLabelNames<Summary<string>>
   >
 
   constructor() {
@@ -40,7 +40,7 @@ export class PrometheusClient {
     }
     this.HistogramVecs[name] = {
       Labels: labelNames,
-      Metric: new Prometheus.Histogram({
+      Metric: new Histogram({
         name: name,
         help: help,
         labelNames: labelNames,
@@ -59,7 +59,7 @@ export class PrometheusClient {
     }
     this.CounterVecs[name] = {
       Labels: labelNames,
-      Metric: new Prometheus.Counter({
+      Metric: new Counter({
         name: name,
         help: help,
         labelNames: labelNames,
@@ -77,7 +77,7 @@ export class PrometheusClient {
     }
     this.GaugeVecs[name] = {
       Labels: labelNames,
-      Metric: new Prometheus.Gauge({
+      Metric: new Gauge({
         name: name,
         help: help,
         labelNames: labelNames,
@@ -95,7 +95,7 @@ export class PrometheusClient {
     }
     this.SummaryVecs[name] = {
       Labels: labelNames,
-      Metric: new Prometheus.Summary({
+      Metric: new Summary({
         name: name,
         help: help,
         labelNames: labelNames,

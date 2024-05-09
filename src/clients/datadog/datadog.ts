@@ -1,4 +1,4 @@
-import tracer from 'dd-trace'
+import { tracer } from 'dd-trace'
 
 export class DataDogClient {
   constructor() {
