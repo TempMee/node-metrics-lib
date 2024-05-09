@@ -11,10 +11,12 @@ const minifiedOutputs = [
   {
     file: pkg.exports['.'].import,
     format: 'esm',
+    exports: 'named',
   },
   {
     file: pkg.exports['.'].require,
     format: 'cjs',
+    exports: 'named',
   },
 ]
 
